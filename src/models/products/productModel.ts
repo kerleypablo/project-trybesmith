@@ -1,5 +1,5 @@
 import { ResultSetHeader } from 'mysql2/promise';
-import connection from '../../utils/connection';
+import connection from '../connection';
 
 import { IProduct } from '../../interfaces/Iproducts';
 
