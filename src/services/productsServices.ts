@@ -6,4 +6,9 @@ const create = async (product: IProduct) => {
   return { status: 201, data };
 };
 
-export default { create };
+const getAll = async () => {
+  const data = await productModel.getAll();
+  return { status: 200, data };
+};
+
+export default { create, getAll };
