@@ -3,7 +3,7 @@ import productModel from '../models/productModel';
 
 const create = async (product: IProduct) => {
   const data = await productModel.create(product);
-  return { status: 200, data };
+  return { status: 201, data };
 };
 
 export default { create };
