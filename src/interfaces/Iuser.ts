@@ -3,5 +3,5 @@ export interface Iuser {
   username: string;
   classe: string;
   level: number;
-  password: number | string;
+  password: string | number;
 }
