@@ -3,16 +3,16 @@ import connection from './connection';
 import { IProduct } from '../interfaces/Iproducts';
 
 async function create(product: IProduct): Promise<IProduct > {
-  const { name, amout } = product;
+  const { name, amount } = product;
 
-  const query = 'INSERT INTO Trybessmith (name, amout) VALUES(?,?)';
-  const [newProduct] = await connection.execute<ResultSetHeader>(query, [name, amout]);
+  const query = 'INSERT INTO Trybesmith.Products (name, amount) VALUES(?,?)';
+
+  const [newProduct] = await connection.execute<ResultSetHeader>(query, [name, amount]);
   const result = {
     id: newProduct.insertId,
     name,
-    amout, 
+    amount, 
   };
-  console.log(result);
   return result;
 }
 
