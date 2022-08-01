@@ -2,9 +2,10 @@ import IOrder from '../interfaces/IOrders';
 import connection from './connection';
 
 async function getAll(): Promise<IOrder[]> {
-  const query = 'SELECT ord.id AS orderId, ord.userId AS userId, prd.id AS productId'
-   + ' FROM Trybesmith.Orders AS ord '
-   + 'INNER JOIN Trybesmith.Products AS prd ON ord.Id = prd.orderId';
+  const query = `SELECT ord.id AS id, ord.userId AS userId,
+  JSON_ARRAYAGG(prd.id) AS productsIds FROM Trybesmith.Orders AS ord 
+  INNER JOIN Trybesmith.Products AS prd ON ord.Id = prd.orderId
+  GROUP BY orderId ORDER BY userId`;
 
   const [result] = await connection.execute(query);
 
