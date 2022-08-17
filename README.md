@@ -1,16 +1,14 @@
-# 🚧 README em construção 🚧
+<details>
+  <summary><strong>👨‍💻 O que foi desenvolvido</strong></summary><br />
 
-<!-- Olá, Tryber!
+  Para este projeto, foi criado uma loja de itens medievais, no formato de uma _API_, utilizando _Typescript_.
+  
+  Você irá desenvolver todas as camadas da aplicação (_Models_, _Service_ e _Controllers_) em seu código e, por meio dessa aplicação, será possível realizar as operações básicas que se pode fazer em um determinado banco de dados:
+  Criação, Leitura, Atualização e Exclusão (ou `CRUD`, para as pessoas mais íntimas 😜 - _Create, Read, Update_ e _Delete_).
 
-Esse é apenas um arquivo inicial para o README do seu projeto.
+ foi criado alguns _endpoints_ que irão ler e escrever em um banco de dados, utilizando o **MySQL**.
 
-É essencial que você preencha esse documento por conta própria, ok?
+  ---
 
-Não deixe de usar nossas dicas de escrita de README de projetos, e deixe sua criatividade brilhar!
 
-⚠️ IMPORTANTE: você precisa deixar nítido:
-- quais arquivos/pastas foram desenvolvidos por você; 
-- quais arquivos/pastas foram desenvolvidos por outra pessoa estudante;
-- quais arquivos/pastas foram desenvolvidos pela Trybe.
-
--->
+  ###  Todos os seus endpoints estao no padrão REST
